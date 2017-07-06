@@ -1,0 +1,155 @@
+.zn_selectbox{
+	width:100%;
+	height:1.35rem;
+	border-bottom:1px solid #eee;
+	box-sizing: border-box;
+	margin-bottom:0.5rem;
+}
+.zn_selectbox > ul{
+	width:5.77rem;
+	height:0.95rem;
+	background:#ededed;
+	border-radius: 0.95rem;
+	margin:0.2rem auto;
+	box-shadow: 0 4px 10px 0 rgba(213,212,212,0.32);
+	padding:0.2rem 0.25rem;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+.zn_selectbox > ul > li{
+	width:1.65rem;
+	height:0.55rem;
+	background:#5ccdfa;
+	border-radius: 0.55rem;
+	text-align: center;
+	line-height:0.55rem;
+	color:#fff;
+	font-size:0.25rem;
+	font-weight: bold;
+}
+.zn_listbox{
+	position:absolute;
+	right:0;
+	left:0;
+	top:3.4rem;
+	bottom:1rem;
+	overflow: hidden;
+	background:#f4f4f4;
+	padding:0 0.25rem;
+	box-sizing: border-box;
+}
+.zn_listbox > ul{
+	width:100%;
+	height:auto;
+}
+.zn_conbox{
+	width:100%;
+	height:1.25rem;
+	box-shadow: 0 3px 7px 0 rgba(197,197,197,0.48);
+	margin-top:0.15rem;
+	border-radius: 0.1rem;
+	position:relative;
+}
+.zn_show{
+	width:100%;
+	height:100%;
+	border-radius: 0.1rem;
+	background:#fff;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:2;
+	overflow: hidden;
+}
+.zn_limg{
+	float:left;
+	width:0.9rem;
+	height:0.9rem;
+	border-radius: 50%;
+	border:2px solid #3dbff3;
+	overflow: hidden;
+	margin:0.15rem 0.23rem;
+}
+.zn_limg >img{
+	display: block;
+	width:100%;
+	height:100%;
+}
+.zn_lmember{
+	float:left;
+	width:4.45rem;
+	height:0.9rem;
+	margin:0.15rem 0;
+}
+.zn_lmember >.zn_top{
+	width:2.45rem;
+	height:0.5rem;
+	position:relative;
+	border-bottom:1px solid #b1b6b8;
+	box-sizing: border-box;
+}
+.zn_top > span{
+	font-size:0.28rem;
+	color:#19172c;
+	line-height:0.5rem;
+}
+.zn_top > img{
+	display: inline-block;
+	width:0.8rem;
+	height:0.17rem;
+}
+.zn_top::before{
+	content:"";
+	display: block;
+	width:0.05rem;
+	height:0.05rem;
+	border-radius: 50%;
+	background:#b1b6b8;
+	position:absolute;
+	left:0;
+	bottom:-0.03rem;
+}
+.zn_top::after{
+	content:"";
+	display: block;
+	width:0.05rem;
+	height:0.05rem;
+	border-radius: 50%;
+	background:#b1b6b8;
+	position:absolute;
+	right:0;
+	bottom:-0.03rem;
+}
+.zn_bottom{
+	width:100%;
+	height:0.4rem;
+}
+.zn_bottom >span{
+	color:#bbb;
+	font-size:0.24rem;
+	line-height:0.4rem;
+}
+.zn_push{
+	width:1.11rem;
+	height:1.25rem;
+	float:left;
+}
+.zn_push >img{
+	display: block;
+	width:100%;
+	height:100%;
+}
+.zn_hidden{
+	position:absolute;
+	right:0;
+	top:0;
+	width:1.2rem;
+	height:1.25rem;
+	overflow: hidden;
+}
+.zn_hidden > img{
+	display: block;
+	width:100%;
+	height:100%;
+}

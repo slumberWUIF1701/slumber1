@@ -272,6 +272,13 @@ input{
     margin: 0.195rem 0.41rem;
     float: left;
 }
+.img2{
+	width: 0.45rem;
+    height: 0.45rem;
+    margin: 0.195rem 0!important;
+    margin-left: 0.35rem!important;
+    float: left;
+}
 .lq_left_tu{
 	width: 1.7rem;
     height: 0.78rem;
@@ -280,11 +287,26 @@ input{
     background-size: 100%;
     overflow: hidden;
 }
+.lq_left_tu1{
+	width: 1.7rem;
+    height: 0.78rem;
+    line-height: 0.41rem;
+    background: url(../img/baizu_lq.png)center center no-repeat;
+    background-size: 70%;
+    overflow: hidden;
+}
 .lq_bu_right{
 	height: 0.78rem;
 	width: 35%;
 	float: left;
 	 position: relative;
+}
+.lq_bu_right1{
+	height: 0.78rem;
+	width: 35%;
+	float: left;
+	position: relative;
+	right: 0.5rem;
 }
 .lq_bu_rtu{
 	height: 0.78rem;
@@ -356,6 +378,12 @@ input{
        top: -0.45rem;
        float: left;
 }
+.lq_xian1 {
+    position: absolute;
+    right: -0.15rem;
+    top: -0.45rem;
+    float: left;
+}
 .lq_yurce{
 	width: 0.37rem;
     height: 0.37rem;
@@ -371,6 +399,21 @@ input{
 	 text-align: center;
 	 line-height: 0.37rem;
 }
+.lq_yurce1{
+	width: 0.37rem;
+    height: 0.37rem;
+    background: #ff4141;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: -0.5rem;
+    top: 0.24rem;
+}
+.lq_yurce1 span{
+	 text-align: center;
+	 line-height: 0.37rem;
+}
 
 /*列表部分*/
 .lq_listss{
@@ -380,6 +423,7 @@ input{
 	background-size: cover;
 	border-radius: 0.15rem;
 	margin: 0 auto;
+	margin-bottom: 0.2rem;
 	
 }
 .lq_lists_box{
@@ -408,7 +452,7 @@ input{
 	background-size: 100%;
 }
 .lq_list_con{
-	width: 5.16rem;
+	width: 5rem;
     height: 1.89rem;
     /* float: left; */
     padding-top: 0.26rem;

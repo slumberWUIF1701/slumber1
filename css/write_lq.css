@@ -1,0 +1,228 @@
+/*头部*/
+a{
+	color: #fff;
+	font-family: "苹方";
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #f4f4f4;
+}
+.lq_top{
+	width: 100%;
+	height: 1.32rem;
+	background-image: url(../img/xiang_lq.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+
+}
+.lq_top_icon{
+	width: 10%;
+	height: 100%;
+	color: #Fff;
+	font-size: 0.3rem;
+	float: left;
+}
+.wirte_lq{
+	width:90%;
+	height: 100%;
+	text-align: center;
+	line-height:1.32rem;
+}
+.wirte_lq span{
+	text-align: center;
+	line-height:1.32rem;
+	font-size: 0.35rem;
+	color: #fff;
+	font-family: "苹方";
+}
+.lq_zuo{
+	font-size: 0.58rem!important;
+	line-height: 1.32rem;
+}
+
+/*头像部分*/
+.lq_role{
+	width: 100%;
+	height: 2.70rem;
+	background: url(../img/write_lq1.png);
+	background-size: 100%;
+	position: relative;
+	box-shadow:0 0 0.2rem 0 rgba(51,51,102,0.3);
+	margin-bottom: 0.17rem;
+}
+
+.lq_role_yuan{
+	width: 1.5rem;
+	height: 1.5rem;
+	left:0;
+	right: 0;
+	top:0;
+	bottom: 0;
+	margin: auto;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+}
+.lq_role_small{
+	width: 1.25rem;
+	height: 1.25rem;
+	left:0;
+	right: 0;
+	top:0;
+	bottom: 0;
+	margin: auto;
+	border-radius: 50%;
+	position: absolute;
+}
+.lq_role_small img{
+	width: 1.25rem;
+	height: 1.25rem;
+	left:0;
+	right: 0;
+	top:0;
+	bottom: 0;
+	margin: auto;
+	border-radius: 50%;
+	position: absolute;
+}
+.lq_nichen{
+	width: 100%;
+	height: 0.5rem;
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+}
+.lq_nichen a{
+	font-size: 0.28rem;
+	color: #fff;
+}
+/*列表部分*/
+.lq_lists{
+	width: 90%;
+	height: 0.69rem;
+	border-radius: 0.1rem;
+	margin: 0 auto;
+	color: #808080;
+	line-height: 0.69rem;
+}
+.lq_lists span{
+	font-size: 0.24rem;
+}
+.lq_listscon{
+	width: 95%;
+	height: 0.69rem;
+	border-radius: 0.1rem;
+	margin: 0 auto;
+	background: #fff;
+	color: #808080;
+	line-height: 0.69rem;
+	margin-bottom: 0.12rem;
+	box-shadow:0 0.05rem 0.1rem 0 rgba(189, 188, 188, 0.5);
+}
+.lq_listscon a{
+	font-size: 0.28rem;
+	color: #444444;
+	text-align: right;
+	}
+.lq_lists_left {
+	width: 25%;
+	height: 0.69rem;
+	float: left;
+	margin-left: 0.23rem;
+}
+.lq_lists_left a{
+	width: 10%;
+	height: 0.69rem;
+	line-height: 0.69rem;
+	color: #444444;
+}
+.lq_lists_right {
+	width: 40%;
+    text-align: right;
+    height: 0.69rem;
+    float: right;
+    padding-right: 0.2rem;
+}
+.lq_lists_right a{
+	color: #b6b6b6;
+}
+a.active{
+	color: #8fdafb;
+}
+.lq_you {
+	font-size: 0.29rem!important;
+	line-height: 0.69rem;
+	color: #a2a2a2;
+}
+.lq_btn{
+	width: 60%;
+	height: 0.66rem;
+	background: #3dbff3;
+	border-radius: 0.5rem;
+	
+	line-height: 0.66rem;
+	text-align: center;
+	position: fixed;
+	bottom: 0.44rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.lq_btn a{
+	font-size: 0.31rem;
+}
+input{
+	width: 70%;
+    height: 0.69rem;
+    display: block;
+    float: left;
+    color: #b6b6b6;
+    border-radius: 0.3rem;
+    font-size: 0.24rem;
+    border: 0;
+    top: 0;
+    position: relative;
+    padding-left: 0.68rem;
+}
+
+input::-webkit-input-placeholder{
+    color: #b6b6b6;opacity:1;
+}
+.lq_mui-content{
+	 width: 95%;
+	  height: auto;
+	  margin: 0 auto;
+	 
+}
+
+textarea {
+    line-height: 0.51rem;
+    width: 96%;
+    margin-bottom: 0.15rem;
+    padding: 0.1rem 0.15rem;
+    border: 0.01rem solid rgba(0,0,0,.2);
+    border-radius: 0.08rem;
+    outline: 0;
+    background-color: #fff;
+    -webkit-appearance: none;
+}
+textarea {
+    height: auto;
+    resize: none;
+}
+.tishi{
+	font-size: 0.15rem;
+	color: #666;
+	text-align: right;
+	clear: right;		/*不让右边有浮动的元素*/
+}
+.tishi span,.tishi b{
+	color: #fc7e7e;
+	box-shadow:0 0.05rem 0.1rem 0 rgba(189, 188, 188, 0.5);
+}

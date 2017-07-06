@@ -1,4 +1,8 @@
 /*头部*/
+body{
+	background: #f4f4f4;
+	font-family: "苹方"
+}
 .top{
 	width: 100%;
 	height: 1.32rem;
@@ -7,14 +11,16 @@
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	margin-bottom: 0.13rem;
 }
 /*底部*/
 .footer{
 	height: 0.99rem;
 	width: 100%;
 	background: #33ccff;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
+	z-index: 999;
 }
 .icon li{
 	width: 25%;
@@ -54,19 +60,18 @@
 
 
 
-/*搜索框*//*
+/*搜索框*/
 .lq_search{
 	width: 100%;
 	height: 0.69rem;
-	background: #fff;
 }
 .lq_searchkuang{
-	
-	width: 100%;
+	width: 80%;
 	height: 0.56rem;
+	float: left;
 }
 .lq_sleft{
-	 width: 0.55rem;
+	width: 0.55rem;
     height: 0.55rem;
     margin-top: 0.1rem;
     float: left;
@@ -74,18 +79,14 @@
     left: 0.8rem;
     z-index: 800;
 }
-
-.lq_sleft img{
-    width: 0.35rem;
-	height: 0.35rem;
-} 
+ 
 input{
 	width: 70%;
 	height: 0.56rem;
 	display: block;
 	float: left;
 	color: #b3b3b3;
-	background: #cccccc;
+	background: #ededed;
 	border-radius: 0.3rem;
 	font-size: 0.24rem;
 	border: 0;
@@ -96,11 +97,321 @@ input{
 .lq_sright{
 	position: relative;
     right: 0.6rem;
-
+    width: 0.55rem;
+    height: 0.55rem;
+    float: left;
     z-index: 800;
+    
 }
-.lq_sright img{
-   margin-top: 0.1rem;
-    width: 0.35rem;
-	height: 0.35rem;
-} */
+.shousuo{
+	font-size: 0.42rem!important;
+}
+.huatong{
+	font-size: 0.52rem!important;
+}
+.lq_sx{
+	width: 20%;
+	height: 0.55rem;
+	float: right;
+}
+ .lqsxb{
+ 	width: 1.02rem;
+ 	height: 0.41rem;
+ 	background: #5bcdfa;
+ 	border-radius:0.2rem;
+ 	margin: 0.08rem 0;
+ 	text-align: center;
+ 	
+ 	line-height: 0.41rem;
+ }  
+.lqsxb a{
+	color: #fff!important;
+	font-size: 0.23rem;
+}
+
+.lq_banner{
+	width: 95%;
+	height: 4.22rem;
+	background: red;
+	margin:0 auto; 
+	margin-bottom: 0.42rem;
+}
+/*推荐部分*/
+.lq_baidu_moudel{
+	width: 95%;
+	height: 6.56rem;
+	background: #fff;
+	margin:0 auto; 
+	border-radius: 0.15rem;
+	margin-bottom: 0.2rem;
+	box-shadow:0 0.05rem 0.1rem 0 rgba(189, 188, 188, 0.5); 
+}
+.lq_tuijie{
+	width: 95%;
+	height: 0.78rem;
+	margin: 0 auto;
+	margin-bottom: 0.16rem;
+}
+.lq_tjleft {
+	width: 60%;
+	height: 0.78rem;
+	background: url(../img/tj.png)no-repeat;
+	background-size:68%;
+	float: left;
+}
+.lq_tjright{
+	width: 20%;
+	height: 0.78rem;
+	float: right;
+}
+ .lq_More{
+ 	width: 1.05rem;
+ 	height: 0.39rem;
+ 	background: #5bcdfa;
+ 	border-radius:0.2rem;
+ 	margin: 0.2rem auto;
+ 	text-align: center;
+ 	line-height: 0.39rem;
+ } 
+ .lq_More a{
+	color: #fff!important;
+	font-size: 0.23rem;
+}
+.lq_tu{
+	width: 95%;
+	height: 3.31rem;
+	margin: 0 auto;
+	background: red;
+	
+}
+
+/*百度部分*/
+.lq_budu{
+	width: 95%;
+	height: 2.04rem;
+	
+	background: #fff; 
+	border-radius: 0 0 0.08rem 0.08rem;
+   margin: 0 auto;
+}
+.lq_budubox{
+		width: 90%;
+	   height: 1.26rem;
+	  margin: 0 auto; 
+	 padding-top:0.03rem;
+}
+.lq_bu_box{
+	width: 90%;
+	height: 0.41rem;
+	line-height: 0.41rem;
+}
+.lq_bu_box1{
+	height: 0.41rem;
+	line-height: 0.41rem;
+
+}
+.lq_bu_box a{
+	font-size: 0.26rem;
+}
+.BAIDU {
+	color: #43c6d5;
+	font-size: 0.16rem;
+}
+.lq_bai{
+	color: #5b5b5b;
+	font-weight: bold;
+	font-size: 0.16rem;
+}
+.lq_bu_box2{
+	height: 0.84rem;
+}
+.lq_xinzi{
+	margin-left: 0.5rem;
+}
+.lq_bu_box1 a{
+	font-family: "苹方";
+	color: #a9a8a8;
+	font-size: 0.15rem;
+}
+.lq_baidu1 a{
+	font-family: "苹方";
+	color: #a9a8a8;
+	font-size: 0.15rem;
+}
+.lq_lines{
+	height: 0.07rem;
+	width: 66%;
+	background: url(../img/lq_lian.png)no-repeat;
+	background-size: cover;
+}
+.lq_lines2{
+	
+	height: 0.07rem;
+	width: 85%;
+	background: url(../img/lq_xian2.png) no-repeat;
+	background-size: 100%;
+}
+.lq_dingwei{
+	height: 0.78rem;
+	width: 100%;
+}
+.lq_dingwei1{
+	height: 0.78rem;
+	width: 100%;
+	position: relative;
+	left: -0.55rem;
+}
+.lq_bu_left{
+	height: 0.78rem;
+	width: 65%;
+	float: left;
+}
+.lq_bu_left img{
+    width: 0.45rem;
+    height: 0.45rem;
+    margin: 0.195rem 0.41rem;
+    float: left;
+}
+.lq_left_tu{
+	width: 1.7rem;
+    height: 0.78rem;
+    line-height: 0.41rem;
+    background: url(../img/baizu_lq.png)center center no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+.lq_bu_right{
+	height: 0.78rem;
+	width: 35%;
+	float: left;
+	 position: relative;
+}
+.lq_bu_rtu{
+	height: 0.78rem;
+	width: 1.2rem;
+	float: left;
+	float: left;
+}
+.lq_bu_rtu li{
+	width: 0.38rem;
+	height: 0.38rem;
+	border-radius: 50%;
+	border: 0.02rem solid #fff;
+	float: left;
+    margin: 0.195rem 0;
+    /*overflow: hidden;*/
+   box-shadow:0 0.05rem 0.1rem 0 rgba(189, 188, 188, 0.5); 
+}
+.lq_bu_rtu li:nth-child(1){
+	position: absolute;
+	background: url(../img/lq_role3.png)no-repeat;
+	background-size: cover;
+	z-index: 4;
+}
+.lq_bu_rtu li:nth-child(2){
+	position: absolute;
+	background: url(../img/lq_role2.png)no-repeat;
+	background-size: cover;
+	left:0.25rem;
+	z-index: 3;
+}
+.lq_bu_rtu li:nth-child(3){
+	position: absolute;
+	background: url(../img/lq_role4.png)no-repeat;
+	background-size: cover;
+	left:0.5rem;
+	z-index: 2;
+}
+.lq_bu_rtu li:nth-child(4){
+	position: absolute;
+	background: url(../img/lq_role.png)no-repeat;
+	background-size: cover;
+	left:0.75rem;
+	z-index: 1;
+}
+/*.lq_yueline{
+	width: 0.32rem;
+    height: 0.05rem;
+    position: absolute;
+   background: #43c6d5;
+  top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0.48rem;
+}
+.lq_yuanq{
+	width: 0.05rem;
+	height: 0.05rem;
+	 background: #43c6d5;
+	 border-radius: 50%;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0.48rem;
+}*/
+.lq_xian{
+    position: absolute;
+       right: 0.65rem;
+       top: -0.45rem;
+       float: left;
+}
+.lq_yurce{
+	width: 0.37rem;
+    height: 0.37rem;
+    background: #ff4141;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0.25rem;
+    top: 0.24rem;
+}
+.lq_yurce span{
+	 text-align: center;
+	 line-height: 0.37rem;
+}
+
+/*列表部分*/
+.lq_listss{
+	width: 95%;
+	height: 1.89rem;
+	background: url(../img/lq_back.png);
+	background-size: cover;
+	border-radius: 0.15rem;
+	margin: 0 auto;
+	
+}
+.lq_lists_box{
+	width: 1.89rem;
+	height: 1.89rem;
+	padding-top: 0.13rem;
+	float: left;
+}
+.lq_listss_tu{
+	width: 1.01rem;
+	height: 1.01rem;
+	border-radius: 50%;
+	border: 0.02rem solid #37c9da;
+	
+    margin: 0 auto;
+   background: url(../img/lq_role2.png)no-repeat;
+	background-size: cover;
+   box-shadow:0 0.05rem 0.1rem 0 rgba(69, 153, 187, 0.5); 
+}
+.lq_star{
+	width: 1.01rem;
+	height:0.5rem;
+	margin: 0 auto;
+	text-align: center;
+	background: url(../img/lq_start.png) center center no-repeat;
+	background-size: 100%;
+}
+.lq_list_con{
+	width: 5.16rem;
+    height: 1.89rem;
+    /* float: left; */
+    padding-top: 0.26rem;
+    padding-left: 2.26rem;
+    /*background: red;*/
+}

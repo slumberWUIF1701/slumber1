@@ -1,0 +1,165 @@
+/*头部*/
+body{
+	background: #efeded;
+	font-family: "苹方"
+}
+.top{
+	width: 100%;
+	height: 1.32rem;
+	background-image: url(../img/lq_top.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+
+/*搜索框*/
+.lq_search_conter{
+	width: 100%;
+	height: 1.62rem;
+	background: #f4f4f4;
+}
+.lq_search{
+	width: 100%;
+	height: 0.75rem;
+	padding-top: 0.03rem;
+	position: relative;
+}
+.lq_searchkuang{
+	width: 5.69rem;
+	height: 0.66rem;
+	background: url(../img/search_lq.png)no-repeat;
+	background-size: 100%;
+	margin-left: 0.31rem;
+	float: left;
+	margin-right: 0.09rem
+}
+input{
+	/*width: 5rem;*/
+    height: 0.46rem;
+    display: block;
+    float: left;
+    color: #b3b3b3;
+    background: #f4f4f4!important;
+    border-radius: 0.3rem;
+    font-size: 0.24rem;
+    border: 0;
+    top: 0.08rem;
+    position: relative;
+    padding-left: 0.68rem;
+}
+.lq_sx{
+	width: 1.4rem;
+    height: 0.45rem;
+    float: right;
+}
+ .lqsxb{
+ 	width: 1.02rem;
+ 	height: 0.41rem;
+ 	background: #5bcdfa;
+ 	border-radius:0.15rem;
+ 	margin: 0.08rem 0;
+ 	text-align: center;
+ 	
+ 	line-height: 0.41rem;
+ }  
+.lqsxb a{
+	color: #fff!important;
+	font-size: 0.23rem;
+	text-align: center;
+	line-height: 0.41rem;
+}
+.lq_sleft{
+	width: 0.55rem;
+    height: 0.55rem;
+    margin-top: 0.1rem;
+    float: left;
+    position: absolute;
+    left: 0.45rem;
+    z-index: 800;
+}
+.lq_sright{
+	width: 0.55rem;
+    height: 0.55rem;
+    float: left;
+    position: relative;
+    right: -1.05rem;
+    z-index: 800;
+    
+}
+.shousuo{
+	font-size: 0.42rem!important;
+}
+.huatong{
+	font-size: 0.6rem!important;
+}
+.lq_lilan{
+	width: 80%;
+	height: 0.7rem;
+	background: red;
+	margin: 0 auto;
+}
+.lq_lilan{
+	position: relative;
+}
+.lq_lilapa{
+	width: 33.33%;
+	height: 0.7rem;
+}
+.lq_ligo{
+	width: 33.33%;
+	height: 0.7rem;
+}
+
+.checked{
+
+	margin: 0.2rem auto;
+}
+.lq_gosi {
+	position: absolute;
+    top: 5px;
+    bottom: 0;
+    left: 26px;
+    right: 0;
+}
+.lq_gosi a{
+	color: #269fcf;
+	font-size: 0.27px;
+	text-align: center;
+}
+
+/*语音*/
+
+.lq_yuyin{
+	 width: 80%;
+    height: 0.65rem;
+    background: #dadada;
+    border-radius: 0.19rem;
+    position: absolute;
+    bottom: 0.32rem;
+    left: 0;
+    margin: auto;
+    right: 0;
+}
+.lq_yuyin_hua{
+    width: 0.55rem;
+    height: 0.65rem;
+    z-index: 800;
+    float: left;
+}
+.huatong1{
+	font-size: 0.6rem!important;
+}
+.lq_yuyincon{
+	width: 4.99rem;
+	 height: 0.65rem;
+	 text-align: center;
+	 line-height: 0.75rem;
+	 color: #525252; 
+	 font-size: 0.23rem;
+}
+.lq_yuyincon a{
+	font-weight:700; 
+	 color: #525252;
+}

@@ -6,6 +6,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/index_lq.css">
 	<link rel="stylesheet" href="css/common.css">
+	 <link rel="stylesheet" href="css/swiper.min.css">
 	<!-- icon引入 -->
 	<link rel="stylesheet" href="https://at.alicdn.com/t/font_2udjus8yyja1c3di.css">
 	<link rel="stylesheet" href="https://at.alicdn.com/t/font_7glsnf02qn7e3ik9.css">
@@ -14,6 +15,9 @@
 	<link rel="stylesheet" href="https://at.alicdn.com/t/font_lwkr5e9v2q82rzfr.css">
 	<link rel="stylesheet" href="https://at.alicdn.com/t/font_i8eywijzfm0lik9.css">
 	<script src="js/common.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/swiper.min.js"></script>
+ 
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minmum-scale=1.0,user-scalable=no">
 </head>
 <body>
@@ -41,10 +45,52 @@
 </div>
 
 <!-- banner部分 -->
-<div class="lq_banner" >
+
+  <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            	<span >香草科技</span>
+            	
+            	<div class="lq_nav">
+            		<a href="">VANILLA TECHNOLOGY</a>
+            	</div>
+            <img src="img/img1.png" alt="" />
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+        </div>
+   
+        <div class="swiper-pagination"></div>
+        
+    </div>
+    <div class="lq_dibu"></div>
+
+<!--<div class="lq_banerbox">
+	<div class="lq_banner" >
+		 <ul class="banner">
+	        <li class="active"><a href="#"><img src="img/img1.png" alt=""></a></li>
+	        <li><a href="#"><img src="img/img1.png" alt=""></a></li>
+	        <li><a href="#"><img src="img/img1.png" alt=""></a></li>
+	        <li><a href="#"><img src="img/img1.png" alt=""></a></li>
+ 			<li><a href="#"><img src="img/img1.png" alt=""></a></li>
+  	  </ul>
+	 <ul class="btnbox">
+	        <li class="active"></li>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+	        <li></li>
+  	  </ul>
+	</div>
+	<div class="lq_dibu"></div>
+</div>-->
+	
+
+	
+	
 
 
-</div>
 <div class="lq_baidu_moudel">
 	<!-- 推荐部分 -->
 	<div class="lq_tuijie">
@@ -58,6 +104,7 @@
 	</div>
 	<!-- 原视频部分 -->
 	<div class="lq_tu">	
+		<div class="lq_shp_tu"></div>
 	</div>
 	<!-- 百度部分 -->
 	<div class="lq_budu">
@@ -184,10 +231,56 @@
 		</div>
 	</div>
 </div>
-	<!-- <div class="lq_tu">	
-	
-	</div> -->
-
+<div class="lq_listss">
+	<div class="lq_lists_box">
+		    <div class="lq_listss_tu"></div>
+	 		<div class="lq_star"></div> 
+	</div>
+	<div class="lq_list_con">
+		<a href="" class="lq_bai">百度 </a>
+		<a href="">BAIDU </a>
+		<div class="lq_baidu1">
+			<a href="">UI 设计师   </a>
+			<a href="" class="lq_xinzi">15k-20k </a>
+		</div>
+			<div class="lq_lines2">
+				
+			</div>
+		<div class="lq_baixian">
+			
+		</div>
+		<div class="lq_dingwei1" >
+			<div class="lq_bu_left">
+				<img src="img/position.png" alt="" class="img2">
+				<div class="lq_left_tu1"></div>
+			</div>
+			<div class="lq_bu_right1">
+				<div class="lq_bu_rtu">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>			
+				</div>
+			
+			  <div class="lq_yueline">
+			  	<img src="img/lq_xxx.png" alt="" / class="lq_xian1">
+			  </div>
+				<div class="lq_yurce1">
+					<span>52</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--最新排行-->	
+<div class="lq_zuixin">
+	<div class="lq_More1">
+		<a href="">MORE</a>
+	</div>
+</div>
+<div class="lq_zuixin_pai">
+	<!--<img src="img/lq_paitu.png" alt="" />-->
+</div>
 <!-- 底部 -->
 <footer>
 	<div class="footer">
@@ -215,5 +308,12 @@
 		</ul>
 	</div>
 </footer>
+ <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+    });
+    </script>
 </body>
 </html>

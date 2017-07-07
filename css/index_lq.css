@@ -18,8 +18,7 @@ body{
 	height: 0.99rem;
 	width: 100%;
 	background: #33ccff;
-	position: fixed;
-	bottom: 0;
+	position: absolute;
 	z-index: 999;
 }
 .icon li{
@@ -140,17 +139,19 @@ input{
 .lq_baidu_moudel{
 	width: 95%;
 	height: 6.56rem;
-	background: #fff;
+	/*background: #fff;*/
 	margin:0 auto; 
 	border-radius: 0.15rem;
 	margin-bottom: 0.2rem;
 	box-shadow:0 0.05rem 0.1rem 0 rgba(189, 188, 188, 0.5); 
 }
 .lq_tuijie{
-	width: 95%;
-	height: 0.78rem;
-	margin: 0 auto;
-	margin-bottom: 0.16rem;
+	background: #f4f4f4;
+    width: 95%;
+    height: 0.78rem;
+    margin: 0 auto;
+
+    margin-bottom: 0.16rem;
 }
 .lq_tjleft {
 	width: 60%;
@@ -178,21 +179,91 @@ input{
 	font-size: 0.23rem;
 }
 .lq_tu{
-	width: 95%;
+	width: 100%;
 	height: 3.31rem;
 	margin: 0 auto;
-	background: red;
-	
+	background: url(../img/lq_vidio.png)no-repeat;
+	background-size: 100%;
+	position: relative;
+	border-radius: 0.15rem;
+}
+.lq_shp_tu{
+	width: 0.89rem;
+    height: 0.89rem;
+    border-radius: 50%;
+    border: 0.02rem solid #fff;
+   right: 0.76rem;
+   
+    background: url(../img/lq_role2.png)no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: -0.32rem;
 }
 
+
+ .swiper-container {
+        width: 95%;
+	    height: 4.22rem;
+        margin: 0 auto;
+        border-radius: 0.15rem;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+.swiper-slide span{
+	z-index: 999;
+    color:#fff;
+    font-family: "苹方";
+    top: 0.24rem;
+    position: absolute;
+    font-size: 0.45rem;
+}
+.lq_nav{
+	z-index: 999;
+    color:#fff;
+    font-family: "苹方";
+    top: 1rem;
+    position: absolute;
+    font-size: 0.25rem;
+    
+}
+.lq_nav a{
+	   color:#fff;
+	/*box-shadow:0 0.05rem 0.1rem 0 rgba(25, 213, 198, 0.5)!important;*/ 
+}
+
+.lq_dibu{
+	width: 100%;
+	height: 0.22rem;
+	background: url(../img/lq_index.png)no-repeat;
+	background-size: 100%;
+	position:relative;
+	bottom: 0;
+	margin-bottom: 0.2rem;
+}
 /*百度部分*/
 .lq_budu{
-	width: 95%;
-	height: 2.04rem;
-	
-	background: #fff; 
-	border-radius: 0 0 0.08rem 0.08rem;
-   margin: 0 auto;
+	width: 100%;
+    height: 2.34rem;
+    background: #fff;
+    border-radius: 0 0 0.08rem 0.08rem;
+    margin: 0 auto;
 }
 .lq_budubox{
 		width: 90%;
@@ -259,7 +330,7 @@ input{
 	height: 0.78rem;
 	width: 100%;
 	position: relative;
-	left: -0.55rem;
+	left: -0.25rem;
 }
 .lq_bu_left{
 	height: 0.78rem;
@@ -351,27 +422,7 @@ input{
 	left:0.75rem;
 	z-index: 1;
 }
-/*.lq_yueline{
-	width: 0.32rem;
-    height: 0.05rem;
-    position: absolute;
-   background: #43c6d5;
-  top: 0;
-    bottom: 0;
-    margin: auto;
-    right: 0.48rem;
-}
-.lq_yuanq{
-	width: 0.05rem;
-	height: 0.05rem;
-	 background: #43c6d5;
-	 border-radius: 50%;
-	position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    right: 0.48rem;
-}*/
+
 .lq_xian{
     position: absolute;
        right: 0.65rem;
@@ -424,7 +475,7 @@ input{
 	border-radius: 0.15rem;
 	margin: 0 auto;
 	margin-bottom: 0.2rem;
-	
+	position: relative;
 }
 .lq_lists_box{
 	width: 1.89rem;
@@ -454,8 +505,40 @@ input{
 .lq_list_con{
 	width: 5rem;
     height: 1.89rem;
-    /* float: left; */
+right: 0;
+   position: absolute;
     padding-top: 0.26rem;
     padding-left: 2.26rem;
     /*background: red;*/
+}
+.lq_zuixin{
+	width: 100%;
+	height: 1.12rem;
+	margin: 0 auto;
+	background: url(../img/index_lq.png)no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+.lq_More1{
+	display: inline-block;
+    width: 1.05rem;
+    height: 0.39rem;
+    background: #5bcdfa;
+    border-radius: 0.2rem;
+   margin: 0.35rem 6rem;
+    text-align: center;
+    line-height: 0.39rem;
+    position: absolute;
+}
+.lq_More1 a {
+    color: #fff!important;
+    font-size: 0.23rem;
+}
+.lq_zuixin_pai{
+	width: 95%;
+	height: 4.68rem;
+	background: url(../img/lq_paitu.png)no-repeat;
+	margin: 0 auto;
+	background-size:100% ;
+	margin-bottom: 0.45rem;
 }

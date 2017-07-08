@@ -56,11 +56,10 @@ class user extends main{
         $this->smarty->display("admin/editUser.html");
     }
     function editUser(){
-        $email=$_POST["email"];
         $sex=$_POST["sex"];
         $imgurl=$_POST["imgurl"];
         $uid=$this->session->get("id");
-        $result=$this->db->setWhere("uid={$uid}")->update("email='{$email}',sex='{$sex}',uphoto='{$imgurl}'");
+        $result=$this->db->setWhere("uid={$uid}")->update("sex='{$sex}',uphoto='{$imgurl}'");
         e($result);
         if($result>0){
             $this->jump("修改成功","index.php?d=admin&f=user&a=editMess");

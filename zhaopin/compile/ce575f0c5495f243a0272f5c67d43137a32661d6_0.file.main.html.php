@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-06 05:14:14
+/* Smarty version 3.1.30, created on 2017-07-08 16:32:43
   from "D:\wamp\www\zhaopin\template\admin\main.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595dab06878a90_57282281',
+  'unifunc' => 'content_5960ed0b360fe5_97151575',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ce575f0c5495f243a0272f5c67d43137a32661d6' => 
     array (
       0 => 'D:\\wamp\\www\\zhaopin\\template\\admin\\main.html',
-      1 => 1499310848,
+      1 => 1499524361,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595dab06878a90_57282281 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5960ed0b360fe5_97151575 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -119,8 +119,26 @@ jquery-3.1.1.js"><?php echo '</script'; ?>
                 <a href="javascript:;">用户管理</a>
                 <ul>
                     <li>
-                        <a href="" target="iframe">查看用户</a>
+                        <a href="index.php?d=admin&f=quanxian&a=chakan" target="iframe">用户权限</a>
                     </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">职位管理</a>
+                <ul>
+                    <li>
+                        <a href="index.php?d=admin&f=zhiwei&a=add" target="iframe">添加职位</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">信息管理</a>
+                <ul>
+                    <li>
+                        <a href="index.php?d=admin&f=editZp&a=chakan" target="iframe">招聘信息管理</a>
+                    </li>
+
                 </ul>
             </li>
             <?php }?>
@@ -136,14 +154,7 @@ jquery-3.1.1.js"><?php echo '</script'; ?>
                 </ul>
             </li>
 
-            <li>
-                <a href="javascript:;">会员管理</a>
-                <ul>
-                    <li>
-                        <a href="index.php?d=admin&f=member&a=show" target="iframe">查看会员</a>
-                    </li>
-                </ul>
-            </li>
+
             <li>
                 <a href="javascript:;">内容管理</a>
                 <ul>

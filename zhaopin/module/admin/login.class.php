@@ -17,7 +17,7 @@ class login extends main{
             exit();
         }
         $obj=new db('user');
-        $result=$obj->select();
+        $result=$obj->setWhere("allow=1")->select();
         foreach ($result as $v){
             if($_POST['user']==$v['uname']){
                 if(md5($_POST['pass'])==$v['upass']){
@@ -55,6 +55,11 @@ class login extends main{
         $uname=$_POST['uname'];
         $upass=$_POST['upass'];
         $zhiwei=$_POST['zhiwei'];
+        $cpname=$_POST['cpname'];
+        $address=$_POST['address'];
+        $hrname=$_POST['hrname'];
+        $phone=$_POST['phone'];
+        $allow=0;
         if(empty($uname)){
             $this->jump("用户名不能为空","index.php?d=admin&f=login&a=reg");
         }
@@ -78,7 +83,7 @@ class login extends main{
             exit;
         }
         $upass=md5($upass);
-        if($db->insert("uname='{$uname}',upass='{$upass}',zhiwei='{$zhiwei}'")>0){
+        if($db->insert("uname='{$uname}',upass='{$upass}',cpname='{$cpname}',address='{$address}',hrname='{$hrname}',zhiwei='{$zhiwei}',phone='{$phone}',allow={$allow}")>0){
             $this->jump("注册成功","index.php?d=admin&f=login");
         }
     }

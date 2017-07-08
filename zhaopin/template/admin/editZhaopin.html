@@ -14,31 +14,37 @@
     <!--<script type="text/javascript" charset="utf-8" src="{JS_PATH}upload.js"></script>-->
 </head>
 <body>
-<form action="index.php?d=admin&f=category&a=addZhaopin" method="post">
-    招聘职位：<select  class="form-control" id="" name="zhiwei" placeholder="">
-    <option value="">--选择职位--</option>
-    {foreach $zhiwei as $v}
-    <option value="{$v['zid']}">{$v['zname']}</option>
-    {/foreach}
-</select><br>
-    工作经验: <input type="text" name="jingyan" required><br>
-    学历：<input type="text" name="xueli" required><br>
-    薪资：<input type="text" name="money" required><br>
-    福利：<input type="text" name="fuli" required><br>
-    技能要求：<input type="text" name="jineng" required><br>
+<form action="index.php?d=admin&f=lists&a=editZhaopin&zid={$result.zid}" method="post">
+    招聘职位：<input type="text" name="zhiwei" value="{$result.zhiwei}"><br>
+    工作经验: <input type="text" name="jingyan" value="{$result.jingyan}"><br>
+    学历：<input type="text" name="xueli" value="{$result.xueli}"><br>
+    薪资：<input type="text" name="money" value="{$result.money}"><br>
+    福利：<input type="text" name="fuli" value="{$result.fuli}"><br>
+    技能要求：<input type="text" name="jineng" value="{$result.jineng}"><br>
+    <div con="{$result.con}" class="con"></div>
     详情: <div><script id="editor" type="text/plain" style="width:500px;height:300px;" name="con"></script></div>
 
 
 
     推荐位：
-{foreach $result as $v}
-      {$v['posname']}<input type="checkbox" name="posid[]" value="{$v['posid']}">
-{/foreach}
+    {foreach $result1 as $v}
+
+
+    {$v['posname']}<input type="checkbox" name="posid[]" value="{$v['posid']}" >
+
+    {/foreach}
 
     <input type="submit" value="提交">
 </form>
 <script>
     var ue = UE.getEditor('editor');
+    ue.addListener( 'ready', function( editor ) {
+    setContent();
+    } );
+    function setContent(isAppendTo) {
+    ue.execCommand('insertHtml', document.querySelector(".con").getAttribute("con"))
+
+    }
 
 
 

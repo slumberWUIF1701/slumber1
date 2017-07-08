@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-03 08:59:06
+/* Smarty version 3.1.30, created on 2017-07-07 08:19:43
   from "D:\wamp\www\zhaopin\template\admin\addZhiwei.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5959eb3a57e197_96550099',
+  'unifunc' => 'content_595f27ffcd2279_12295422',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '28aa9b8a1798d6a4835ca2b7cfe6dd821d6455e3' => 
+    'a3bcd5143945b0479e9882a5b5bc9f43c96ae572' => 
     array (
       0 => 'D:\\wamp\\www\\zhaopin\\template\\admin\\addZhiwei.html',
-      1 => 1498644850,
+      1 => 1499408374,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5959eb3a57e197_96550099 (Smarty_Internal_Template $_smarty_tpl) {
+function content_595f27ffcd2279_12295422 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,16 +31,16 @@ function content_5959eb3a57e197_96550099 (Smarty_Internal_Template $_smarty_tpl)
 bootstrap.min.css">
 </head>
 <body>
-<form class="form-horizontal" action="index.php?d=admin&f=role&a=addRole" method="post">
+<form class="form-horizontal" action="index.php?d=admin&f=zhiwei&a=addZhiwei" method="post">
     <div class="form-group">
-        <label for="inputPassword3" class="col-sm-2 control-label">角色名</label>
+        <label for="inputPassword3" class="col-sm-2 control-label">职位名</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" id="" placeholder="username" name="rname">
+            <input type="text" class="form-control" id="" placeholder="zname" name="zname">
         </div>
     </div>
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">添加角色</button>
+            <button type="submit" class="btn btn-default">添加职位</button>
         </div>
     </div>
 </form>

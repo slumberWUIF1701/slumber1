@@ -7,7 +7,7 @@
 <style>
     form{
         width:400px;
-        height:240px;
+        height:440px;
         position:absolute;
         top:0;
         bottom:0;
@@ -25,11 +25,27 @@
         height:20px;
         line-height:20px;
     }
+    a{
+        display: block;
+        float:right;
+    }
 </style>
 <body>
     <form action="index.php?d=admin&f=login&a=checkReg" method="post" >
         <label for="">
+            公司名称：<input type="text" name="cpname" required>
+        </label>
+        <label for="">
+            公司地址：<input type="text" name="address" required>
+        </label>
+        <label for="">
+            HR名字：<input type="text" name="hrname" required>
+        </label>
+        <label for="">
             职称：<input type="text" name="zhiwei" required>
+        </label>
+        <label for="">
+            联系电话：<input type="text" name="phone" required>
         </label>
         <label for="">
             账号：<input type="text" name="uname" required>
@@ -43,6 +59,7 @@
         <label for="">
             <input type="submit" value="提交">
         </label>
+        <a href="index.php?d=admin&f=login">已有账户，请登录</a>
     </form>
 </body>
 </html>

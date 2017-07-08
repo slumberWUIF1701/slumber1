@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-05 10:56:56
+/* Smarty version 3.1.30, created on 2017-07-07 08:05:45
   from "D:\wamp\www\zhaopin\template\admin\editUser.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595ca9d86bb252_99282135',
+  'unifunc' => 'content_595f24b93d3a81_21578326',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '36b4a81429e92c38f3bc4de60ab960fcf9e1804b' => 
     array (
       0 => 'D:\\wamp\\www\\zhaopin\\template\\admin\\editUser.html',
-      1 => 1499244959,
+      1 => 1499393496,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595ca9d86bb252_99282135 (Smarty_Internal_Template $_smarty_tpl) {
+function content_595f24b93d3a81_21578326 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,9 +41,7 @@ upload.js"><?php echo '</script'; ?>
         上传头像：
         <input type="hidden" name="imgurl">
         <div class="uploadbox"></div>
-        <label for="">
-            邮箱：<input type="email" name="email" value=""><br>
-        </label>
+
         性别：
         <label>男: <input type="radio" checked name="sex" value="男"></label>
         <label>女: <input type="radio" name="sex" value="女"></label><br>

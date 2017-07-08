@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-07 15:53:18
-  from "D:\wamp\www\zhaopin\template\admin\addCon.html" */
+/* Smarty version 3.1.30, created on 2017-07-08 16:28:40
+  from "D:\wamp\www\zhaopin\template\admin\editZhaopin.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595f924e8c73d8_63409435',
+  'unifunc' => 'content_5960ec18c9e832_39660223',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'f5028e9ce75c3fa7be4d8f1b621094a9490daf69' => 
+    'c2abcf66872f4df35f20f94b7a2c14a5373a3618' => 
     array (
-      0 => 'D:\\wamp\\www\\zhaopin\\template\\admin\\addCon.html',
-      1 => 1499435178,
+      0 => 'D:\\wamp\\www\\zhaopin\\template\\admin\\editZhaopin.html',
+      1 => 1499524118,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595f924e8c73d8_63409435 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5960ec18c9e832_39660223 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -50,29 +50,22 @@ upload.js"><?php echo '</script'; ?>
 >-->
 </head>
 <body>
-<form action="index.php?d=admin&f=category&a=addZhaopin" method="post">
-    招聘职位：<select  class="form-control" id="" name="zhiwei" placeholder="">
-    <option value="">--选择职位--</option>
-    <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['zhiwei']->value, 'v');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
-?>
-    <option value="<?php echo $_smarty_tpl->tpl_vars['v']->value['zid'];?>
-"><?php echo $_smarty_tpl->tpl_vars['v']->value['zname'];?>
-</option>
-    <?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
-?>
-
-</select><br>
-    工作经验: <input type="text" name="jingyan" required><br>
-    学历：<input type="text" name="xueli" required><br>
-    薪资：<input type="text" name="money" required><br>
-    福利：<input type="text" name="fuli" required><br>
-    技能要求：<input type="text" name="jineng" required><br>
+<form action="index.php?d=admin&f=lists&a=editZhaopin&zid=<?php echo $_smarty_tpl->tpl_vars['result']->value['zid'];?>
+" method="post">
+    招聘职位：<input type="text" name="zhiwei" value="<?php echo $_smarty_tpl->tpl_vars['result']->value['zhiwei'];?>
+"><br>
+    工作经验: <input type="text" name="jingyan" value="<?php echo $_smarty_tpl->tpl_vars['result']->value['jingyan'];?>
+"><br>
+    学历：<input type="text" name="xueli" value="<?php echo $_smarty_tpl->tpl_vars['result']->value['xueli'];?>
+"><br>
+    薪资：<input type="text" name="money" value="<?php echo $_smarty_tpl->tpl_vars['result']->value['money'];?>
+"><br>
+    福利：<input type="text" name="fuli" value="<?php echo $_smarty_tpl->tpl_vars['result']->value['fuli'];?>
+"><br>
+    技能要求：<input type="text" name="jineng" value="<?php echo $_smarty_tpl->tpl_vars['result']->value['jineng'];?>
+"><br>
+    <div con="<?php echo $_smarty_tpl->tpl_vars['result']->value['con'];?>
+" class="con"></div>
     详情: <div><?php echo '<script'; ?>
  id="editor" type="text/plain" style="width:500px;height:300px;" name="con"><?php echo '</script'; ?>
 ></div>
@@ -80,15 +73,18 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 
 
     推荐位：
-<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['result']->value, 'v');
+    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['result1']->value, 'v');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 ?>
-      <?php echo $_smarty_tpl->tpl_vars['v']->value['posname'];?>
+
+
+    <?php echo $_smarty_tpl->tpl_vars['v']->value['posname'];?>
 <input type="checkbox" name="posid[]" value="<?php echo $_smarty_tpl->tpl_vars['v']->value['posid'];?>
-">
-<?php
+" >
+
+    <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
@@ -100,6 +96,13 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 <?php echo '<script'; ?>
 >
     var ue = UE.getEditor('editor');
+    ue.addListener( 'ready', function( editor ) {
+    setContent();
+    } );
+    function setContent(isAppendTo) {
+    ue.execCommand('insertHtml', document.querySelector(".con").getAttribute("con"))
+
+    }
 
 
 

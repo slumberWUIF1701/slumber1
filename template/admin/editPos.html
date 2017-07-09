@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {foreach $position as $v}
+    <li> <span>{$v['posname']}</span>  <a href="index.php?d=admin&f=position&a=del&pid={$v['posid']}">删除</a>
+        <a href="index.php?d=admin&f=position&a=edit&pid={$v['posid']}">编辑</a>
+    </li>
+    {/foreach}
+
+</body>
+</html>

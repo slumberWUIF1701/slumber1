@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" charset="utf-8" src="{JS_PATH}upload.js"></script>
+</head>
+<body>
+    <form action="index.php?d=admin&f=user&a=editUser" method="post">
+        <!--用户名：-->
+        <!--<input type="text"  value="" name="user">-->
+        <!--密码：-->
+        <!--<input type="password" name="pass">-->
+        上传头像：
+        <input type="hidden" name="imgurl">
+        <div class="uploadbox"></div>
+
+        性别：
+        <label>男: <input type="radio" checked name="sex" value="男"></label>
+        <label>女: <input type="radio" name="sex" value="女"></label><br>
+        <input type="submit" value="提交">
+    </form>
+    <script>
+//        var ue = UE.getEditor('editor');
+
+
+        var obj = new upload();
+        obj.size = 1024 * 1024 * 8.6;
+        obj.selectBtnStyle.background = "red";
+        obj.createView({
+            parent: document.querySelector(".uploadbox")
+        });
+        obj.up("index.php?d=admin&f=user&a=upload",function(data){
+            document.querySelector("input[name=imgurl]").value=data;
+        });
+
+    </script>
+</body>
+</html>

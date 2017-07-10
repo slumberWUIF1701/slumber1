@@ -7,7 +7,7 @@ html,body{
 	width: 100%;
 	height: 1.32rem;
 	line-height: 1.32rem;
-	background-image: url(../img/lq_top.png);
+	background-image: url(../../img/lq_top.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -25,7 +25,7 @@ h5{
 	width:100%;
 	height: 3.48rem;
 	margin-top: -0.14rem;
-	background: url(../img/zw-ban.png);
+	background: url(../../img/zw-ban.png);
 	background-size: cover;
 	background-position: center center;
 	position: relative;
@@ -199,7 +199,7 @@ h5{
 	height: 0.3rem;
 	border-radius: 50%;
 	border: 1px solid #fff;
-	background: url(../img/zw-tx1.png);
+	background: url(../../img/zw-tx1.png);
 	background-position: center;
 	background-size: cover;
 	position: absolute;
@@ -212,7 +212,7 @@ h5{
 	height: 0.3rem;
 	border-radius: 50%;
 	border: 1px solid #fff;
-	background: url(../img/zw-tx.png);
+	background: url(../../img/zw-tx.png);
 	background-position: center;
 	background-size: cover;
 	position: absolute;
@@ -225,7 +225,7 @@ h5{
 	height: 0.3rem;
 	border-radius: 50%;
 	border: 1px solid #fff;
-	background: url(../img/zw-tx2.png);
+	background: url(../../img/zw-tx2.png);
 	background-position: center;
 	background-size: cover;
 	position: absolute;
@@ -238,7 +238,7 @@ h5{
 	height: 0.3rem;
 	border-radius: 50%;
 	border: 1px solid #fff;
-	background: url(../img/zw-tx3.png);
+	background: url(../../img/zw-tx3.png);
 	background-position: center;
 	background-size: cover;
 	position: absolute;
@@ -270,7 +270,7 @@ h5{
 	width: 4.68rem;
 	height: 0.59rem;
 	border-radius: 0.8rem;
-	background: url(../img/zw-outlog.png);
+	background: url(../../img/zw-outlog.png);
 	background-position: center center;
 	background-size: cover;
 	position: absolute;

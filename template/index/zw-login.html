@@ -9,32 +9,32 @@
 		<meta name="full-screen" content="yes">
 		<meta name="format-detection" content="telephone=no, email=no" />
 		<title></title>
-		<link rel="stylesheet" href="css/common.css" />
-	    <link rel="stylesheet" type="text/css" href="css/zw-login.css"/>
-	    <script src="js/common.js"></script>
-	    <script src="js/jquery.js"></script>
-	    <script src="js/jquery.validate.js"></script>
+		<link rel="stylesheet" href="{CSS_PATH}/common.css" />
+	    <link rel="stylesheet" type="text/css" href="{CSS_PATH}/zw-login.css"/>
+	    <script src="{JS_PATH}/common.js"></script>
+	    <script src="{JS_PATH}/jquery.js"></script>
+	    <script src="{JS_PATH}/jquery.validate.js"></script>
 	</head>
 	<body>
 		<div class="zw-tx">
 			<a href="">
-				<img src="img/zw-tx.png" alt="" />
+				<img src="{IMG_PATH}/zw-tx.png" alt="" />
 			</a>
 		</div>
 		
 		<form action="" id="login">
 			<p class="zw-p">
 				<h6>ACCOUNT</h6><span class="zw-n">NUMBER</span><br>
-				<input type="text" name="uname"/>
+				<input type="text" name="uname" id="uname"/>
 			</p>
 			
 			<p>
 				<h6>PASS</h6><span class="zw-n">WORD</span><br>
-				<input type="password" name="upass"/>
+				<input type="password" name="upass" id="upass"/>
 			</p>
 			
 			<div class="zw-z">
-				<a href="zw-zhuce.html">立即注册</a>
+				<a href="index.php?d=index&f=info&a=reg">立即注册</a>
 				<a href="">忘记密码？</a>
 			</div>
 			
@@ -47,13 +47,13 @@
 			<h5>其他登录方式</h5>
 			<div class="zw-qt">
 				<a href="">
-					<img src="img/zw-qq.png" alt="" />
+					<img src="{IMG_PATH}/zw-qq.png" alt="" />
 				</a>
 				<a href="">
-					<img src="img/zw-wx.png" alt="" />
+					<img src="{IMG_PATH}/zw-wx.png" alt="" />
 				</a>
 				<a href="">
-					<img src="img/zw-wb.png" alt="" />
+					<img src="{IMG_PATH}/zw-wb.png" alt="" />
 				</a>
 			</div>
 		</div>	
@@ -82,10 +82,30 @@
 	               	minlength: $.validator.format("密码长度不低于4位")
 	           	},
 	       	},
-	       	errorPlacement: function(error, element) {
-	           	$('<div id="box">').html(error).css({width:'2.6rem',height:'0.4rem',position:'absolute',left:'3.2rem'}).insertAfter(element);
-	           	error.css({'color':'#FF3838',fontSize:'0.24rem',position:'absolute',top:'-0.6rem'})
-	       	},
+
 	   	})
 	})
+
+
+    $(".zw-log").click(function(e) {
+        e.preventDefault();
+        var uname=$("#uname").val();
+        var upass=$("#upass").val();
+        $.ajax({
+            url: 'index.php?d=index&f=login&a=willLogin',
+            type:"post",
+            data: {
+                uname: uname, upass: upass
+            },
+            success: function (e) {
+                if (e=='ok'){
+                    alert(e);
+                    location.href="index.php?d=index&f=info&a=init"
+                }else{
+                    alert(e)
+                }
+
+            }
+        })
+    })
 </script>

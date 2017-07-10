@@ -1,7 +1,7 @@
 html,body{
 	width: 100%;
 	height: 100%;
-	background-image: url(../img/zw-zhuce.png);
+	background-image: url(../../img/zw-zhuce.png);
 	background-size: cover;
 }
 
@@ -92,4 +92,10 @@ form input{
 .zw-qt img{
 	width: 0.6rem;
 	padding: 0.4rem 0.2rem 0.5rem 0.2rem;
+}
+
+label{
+	position: absolute;
+	left:2.8rem;
+	color: #FF3838;
 }

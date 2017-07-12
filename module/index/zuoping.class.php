@@ -4,7 +4,7 @@ class zuoping extends main{
         $this->smarty->display("index/zn_zuoping.html");
     }
     function addcon(){
-        $db=new db("shows");
+        $db=new db("works");
         $result=$db->select();
         echo json_encode($result);
     }
